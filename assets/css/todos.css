@@ -1,14 +1,14 @@
 #container {
-	background : pink;
+	background : EAF3F4;
 	width: 360px;
 	margin: 100px auto;
-	background:  #f7f7f7;
+	background:  #EAF3F4;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	padding: 15px;
 }
 
-.completed { 
-	color:gray; 
-	text-decoration: line-through;
+body {
+	font-family: Roboto
 }
 
 h1 {
@@ -16,4 +16,45 @@ h1 {
 	color: white;
 	padding: 10px 25px; 
 	/* 10px padding on top/ bottom, 25px padding on left/right  */
+	text-transform: uppercase;
+	font-size: 23px;
+	font-weight: normal;
+}
+/* use the box-sizing, which defines the width and height property not including 
+padding, border, margin */
+input {
+	font-size: 18px;
+	width: 100%;
+	padding : 5px 5px;
+	box-sizing: border-box;
+	color : #2980b9;
+}
+
+/* this style will only apply when the input has focus on it  */
+input:focus {
+	border: 2px solid #2980b9;
+	outline: none;
+}
+/* use list-style to get rid of the bullet point for li in ul */
+ul {
+	list-style: none; 
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	background: #EDEFF6;
+	height: 40px;
+	line-height: 40px;
+	color: 3D3E3E;
+}
+
+li:nth-child(2n) {
+	background: #EAF7F9;
+}
+
+
+.completed { 
+	color:gray; 
+	text-decoration: line-through;
 }

@@ -16,7 +16,7 @@
 // 	}
 // 	else 
 // 		$(this).css({
-// 			'text-decoration': "",
+// 			'text-decoration': none,
 // 			"color": "black"
 // 		 })
 // });
@@ -43,6 +43,6 @@ $("input[type='text'").keypress(function(e) {
 	if (e.which === 13) {
 		const todoList = $(this).val();
 		$(this).val("")  //clear the input field  
-		$("ul").append("<li><span><i class='fa fa-trash'></i></span>" + todoList + "</li>"); //create an new li and added to the todolist ul
+		$("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoList + " </li>"); //create an new li and added to the todolist ul
 	}
 });
