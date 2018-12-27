@@ -46,3 +46,8 @@ $("input[type='text'").keypress(function(e) {
 		$("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoList + " </li>"); //create an new li and added to the todolist ul
 	}
 });
+
+
+$(".fa-plus").click(function() {
+	$("input[type='text").fadeToggle()
+})
