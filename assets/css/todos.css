@@ -68,24 +68,23 @@ li:nth-child(2n) {
 }
 /* for the delete icon */
 span {
-	background: #cf1c1ccc;
-	color: white;
-	height: 40px;
-	margin-right: 20px;
-	width: 0;
-	text-align: center;
-	display:inline-block;
-	transition: 0.25s linear;
-	opacity: 0;
-
+  background: #cf1c1ccc;
+  color: white;
+  height: 40px;
+  margin-right: 20px;
+  width: 0;
+  text-align: center;
+  display: inline-block;
+  transition: 0.25s linear;
+  opacity: 0;
 }
-li:hover span{
-	width: 40px;
-	opacity: 1.0;
+li:hover span {
+  width: 40px;
+  opacity: 1;
 }
 
 .fa-plus {
-	float: right;
+  float: right;
 }
 .completed {
   color: gray;
