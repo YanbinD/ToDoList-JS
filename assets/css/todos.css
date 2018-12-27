@@ -1,60 +1,93 @@
 #container {
-	background : EAF3F4;
-	width: 360px;
-	margin: 100px auto;
-	background:  #EAF3F4;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-	padding: 15px;
+  background: EAF3F4;
+  width: 360px;
+  margin: 100px auto;
+  background: #eaf3f4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 15px;
 }
 
+/* use https://uigradients.com/ */
 body {
-	font-family: Roboto
+  background: #be93c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #7bc6cc,
+    #be93c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #7bc6cc,
+    #be93c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: Roboto;
 }
 
 h1 {
-	background: #2980b9;
-	color: white;
-	padding: 10px 25px; 
-	/* 10px padding on top/ bottom, 25px padding on left/right  */
-	text-transform: uppercase;
-	font-size: 23px;
-	font-weight: normal;
+  background: #2980b9;
+  color: white;
+  padding: 10px 25px;
+  /* 10px padding on top/ bottom, 25px padding on left/right  */
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: normal;
 }
 /* use the box-sizing, which defines the width and height property not including 
 padding, border, margin */
 input {
-	font-size: 18px;
-	width: 100%;
-	padding : 5px 5px;
-	box-sizing: border-box;
-	color : #2980b9;
+  font-size: 18px;
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  color: #2980b9;
+  border: 3px solid white; /* make the border align with the li with a white pixel */
 }
 
 /* this style will only apply when the input has focus on it  */
 input:focus {
-	border: 2px solid #2980b9;
-	outline: none;
+  border: 2px solid #2980b9;
+  outline: none;
 }
 /* use list-style to get rid of the bullet point for li in ul */
 ul {
-	list-style: none; 
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-	background: #EDEFF6;
-	height: 40px;
-	line-height: 40px;
-	color: 3D3E3E;
+  background: #dceef0;
+  height: 40px;
+  line-height: 40px;
+  color: 3d3e3e;
 }
 
 li:nth-child(2n) {
-	background: #EAF7F9;
+  background: #f2e7f3;
+}
+/* for the delete icon */
+span {
+	background: #cf1c1ccc;
+	color: white;
+	height: 40px;
+	margin-right: 20px;
+	width: 0;
+	text-align: center;
+	display:inline-block;
+	transition: 0.25s linear;
+	opacity: 0;
+
+}
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
 }
 
-
-.completed { 
-	color:gray; 
-	text-decoration: line-through;
+.fa-plus {
+	float: right;
+}
+.completed {
+  color: gray;
+  text-decoration: line-through;
 }
