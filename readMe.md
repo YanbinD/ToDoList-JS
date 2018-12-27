@@ -9,20 +9,20 @@ The effects includes:
 
 external library and source: 
 
-background gradients generation: https://uigradients.com/#Dania 
+- background gradients generation: https://uigradients.com/#Dania 
 
-font: Roboto from Google font 
+- font: Roboto from Google font 
 
-icon: from font-awesome 
+- icon: from font-awesome 
 
 
 
 JQuery function: 
 
-.click() 
+- .click() 
 
-.fadeOut()
+- .fadeOut()
 
-.fadeToggle() 
+- .fadeToggle() 
 
-.toggleClass()
+- .toggleClass()
